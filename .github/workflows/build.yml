@@ -61,8 +61,8 @@ jobs:
           - os: "opensuse/tumbleweed"
             pkgs: "gcc gcc-c++"
           - os: "opensuse/tumbleweed"
-            pkgs: clang
-            env1: "CC=clang CXX=clang++"
+            pkgs: clang19
+            env1: "CC=clang-19 CXX=clang++-19"
           - os: "archlinux:base"
             pkgs: gcc
           - os: "archlinux:base"
