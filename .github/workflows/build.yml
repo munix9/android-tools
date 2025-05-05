@@ -80,7 +80,8 @@ jobs:
           - os: "fedora:latest"
             pkgs: "gcc gcc-g++"
           - os: "fedora:rawhide"
-            pkgs: "gcc gcc-g++"
+            pkgs: clang
+            env1: "CC=clang CXX=clang++"
 
     container:
       image: ${{ matrix.os }}
